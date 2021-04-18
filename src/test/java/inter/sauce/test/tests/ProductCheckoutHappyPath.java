@@ -22,7 +22,7 @@ public class ProductCheckoutHappyPath {
 
     @Test(priority = 0)
     public void productCheck() {
-        
+        // POM classes 
         SauceDemoLandingPage sauceDemoLandingPage = new SauceDemoLandingPage(driver);
         sauceDemoLandingPage.performLogin();
         SauceDemoProductsPage sauceDemoProductsPage = new SauceDemoProductsPage(driver);
@@ -47,7 +47,7 @@ public class ProductCheckoutHappyPath {
     @Parameters("browser")
     public void beforeMethod(String browser) throws InterruptedException {
         if ("firefox".equalsIgnoreCase(browser)) {
-            System.setProperty("webdriver.gecko.driver", CommonConstants.GECKO_DRIVER_PATH);
+            System.setProperty("webdriver.gecko.driver", "/Users/rekha/downloads/geckodriver");
             driver = new FirefoxDriver();
         } else {
             System.setProperty("webdriver.chrome.driver", "/Users/rekha/downloads/chromedriver");
