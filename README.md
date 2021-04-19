@@ -12,7 +12,7 @@ Clone the repository.
 
 I have used firefox and google chrome drivers, Same tests with little modification in the initilization of the browser can be used to extend the test cases for Edge,IE and other browser.
 
-To execute this project, please change the webdriver path in the ProductCheckoutHappyPath.java at "beforeMethod".
+To execute this project, please change the webdriver path in the "inter.sauce.test.tests.ProductCheckoutHappyPath.java at "beforeMethod".
 
 Run the project using mvn test goal.
 
