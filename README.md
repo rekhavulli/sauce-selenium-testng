@@ -26,14 +26,13 @@ Note: I have used firefox and google chrome drivers, Same tests with little modi
 4. Removed an item from the shopping cart. The Page Object File for removing the item from the cart is `SauceDemoCartPage.java`
 5. Sorted the items with price low to high. The Page Object File for the sorting the item with low to high is `SauceDemoProductPage.java`
 6. Added one more item to the shopping cart. The Page Object File for adding items to the cart  `SauceDemoCartPage.java`
-7. While checkout, Asserted the number of items in the cart. This is the Page Object File for adding items to the cart `SauceDemoProductPage.java`
-8. Provide the information in Checkout page. This is the Page Object File for adding items to the cart  `SauceDemoCheckoutPage.java`
-9. Review the cart items, Asserted the purchasing items are correct and total price of the items. This is the Page Object File for adding items to the cart      `SauceDemoCheckoutOverviewPage.java`
-10.Completed the order. This is the Page Object File for adding items to the cart `SauceDemoCheckoutCompletePage.java`
+7. While checkout, Asserted the number of items in the cart. The Page Object File for adding items to the cart `SauceDemoProductPage.java`
+8. Provide the information in Checkout page. The Page Object File for adding items to the cart  `SauceDemoCheckoutPage.java`
+9. Reviewed the items in the cart, Asserted whether the purchasing items are correct and the total price of the items. The Page Object File for adding items to the cart      `SauceDemoCheckoutOverviewPage.java`
+10.Completed the order. The Page Object File for adding items to the cart `SauceDemoCheckoutCompletePage.java`
 
 Have shared the execution result(TestNG report) in Results folder.
 
-If a acceptence criteria is not met then the test will be failed with required message and control is passed to next test.
 
 ## Environment used for testing
 
