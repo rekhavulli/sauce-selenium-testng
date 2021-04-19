@@ -8,15 +8,15 @@ I have used TestNG + Selenium + Page Object Model for automating of the workflow
 
 # Instructions to excute the project
 
-Clone the repository.
+1. Clone the repository.
+2. To execute this project, please change the webdriver path in the `inter.sauce.test.tests.ProductCheckoutHappyPath.java` at `beforeMethod`.
+3. Run the project using `mvn test` goal. The maven command needs to be run from folder having `pom.xml` at current folder path.
+4. Test Results can be viewed at _target>surefire-reports>index.html_
 
-I have used firefox and google chrome drivers, Same tests with little modification in the initilization of the browser can be used to extend the test cases for Edge,IE and other browser.
 
-To execute this project, please change the webdriver path in the "inter.sauce.test.tests.ProductCheckoutHappyPath.java at "beforeMethod".
+Note: I have used firefox and google chrome drivers, Same tests with little modification in the initilization of the browser can be used to extend the test cases for Edge,IE and other browser.
 
-Run the project using mvn test goal.
 
-Test Results can be viewed at target>surefire-reports>index.html
 
 # Steps to the work flow for automating the test suite
 
