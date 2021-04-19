@@ -8,14 +8,19 @@ I have used TestNG + Selenium for the automation of the workflow.
 
 
 Opened the Saucedemo website and logged into the website.
+
 Sorted the items with price low to high.
+
 Added to two items to the shopping and asserted that the items in the shopping cart.
+
 Removed an item from the shopping cart and then continue shopping.
+
 Added another item to the shopping cart.
+
 While checkout, Asserted the purchasing items are correct and total price of the items.
+
 Completed the order.
 
-After checking all products in a accessed month, Home page is opened prior to clicking on next months link
 If a acceptence criteria is not met then the test is failed with required message and control is passed to next test
 
 Environment used for testing
@@ -37,5 +42,7 @@ Edit: Have shared the execution result(TestNG report) in results folder.
 Libraries Used
 
 Selenium - http://www.seleniumhq.org/
+
 TestNG - http://testng.org/
+
 Apache Commons Lang3 - https://commons.apache.org/proper/commons-lang/
