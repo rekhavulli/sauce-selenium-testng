@@ -48,11 +48,11 @@ If a acceptence criteria is not met then the test will be failed with required m
 
 #Environment used for testing
 
-Eclipse
+* Eclipse
 
-Selenium
+* Selenium
 
-Maven
+* Maven
 
 
 ** have not uploaded the selenium dependency and browser drivers to the github repo. New locations of the drivers have to be updated in the commonconstants class
