@@ -2,7 +2,7 @@
 
 This automation test suite is to automate the work flow for Saucedemo website.
 
-Approach Used for Automation:
+Framework used for Automation:
 
 I have used TestNG + Selenium + Page Object Model for automating of the workflow.
 
