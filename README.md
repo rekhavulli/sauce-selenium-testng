@@ -1,25 +1,28 @@
 # saucedemo-selenium-testng
 
-This is Automation test suite is to automate Saucedemo website.
+This is Automation test suite to automate Saucedemo website.
 
 Approch Used for Automation:
 
 I have used TestNG + Selenium for the automation of the workflow.
 
+The frame work used is Page Object Model.
 
-Opened the Saucedemo website and logged into the website.
 
-Sorted the items with price low to high.
+Opened the Saucedemo website and logged into the website. This is the Page Object File for the landing screen -(SauceDemoLandingPage.java)
 
-Added to two items to the shopping and asserted that the items in the shopping cart.
+Sorted the items with price low to high. This is the Page Object File for the sorting the item with low to high -(SauceDemoProductPage.java)
 
-Removed an item from the shopping cart and then continue shopping.
+Added two items to the shopping cart and asserted the items in the shopping cart. This is the Page Object File for adding items to the cart  -(SauceDemoProductPage.java)
+
+Removed an item from the shopping cart and then continue shopping. This is the Page Object File for removing the item from the cart -SauceDemoCartPage.java
 
 Added another item to the shopping cart.
 
 While checkout, Asserted the purchasing items are correct and total price of the items.
 
 Completed the order.
+
 
 If a acceptence criteria is not met then the test is failed with required message and control is passed to next test
 
