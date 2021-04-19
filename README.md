@@ -4,31 +4,49 @@ This automation test suite is to automate the work flow for Saucedemo website.
 
 Approach Used for Automation:
 
-I have used TestNG + Selenium + Page Object Model for the automation of the workflow.
+I have used TestNG + Selenium + Page Object Model for automating of the workflow.
 
-# Steps to the Work Flow in automation test suite
+# Instructions to excute the project
 
-Opened the Saucedemo website and logged into the website. This is the Page Object File for the landing screen -(SauceDemoLandingPage.java)
+Clone the repository.
 
-Sorted the items with price low to high. This is the Page Object File for the sorting the item with low to high -(SauceDemoProductPage.java)
+I have used firefox and google chrome drivers, Same tests with little modification in the initilization of the browser can be used to extend the test cases Edge,IE and other browser.
 
-Added two items to the shopping cart and asserted the items in the shopping cart. This is the Page Object File for adding items to the cart  -(SauceDemoProductPage.java)
+To execute this project, please change the webdriver path in the ProductCheckoutHappyPath.java at "beforeMethod".
 
-Removed an item from the shopping cart and then continue shopping. This is the Page Object File for removing the item from the cart -SauceDemoCartPage.java
+Run the project using mvn test goal.
 
-Added two more item to the shopping cart. This is the Page Object File for adding items to the cart  -(SauceDemoProductPage.java)
+Test Results can be viewed at target>surefire-reports>index.html
 
-While checkout, Asserted the purchasing items are correct and total price of the items. This is the Page Object File for adding items to the cart  -(SauceDemoProductPage.java)
+# Steps to the work flow for automating the test suite
+
+Opened the Saucedemo website and logged into the website. The Page Object File for the landing screen  is "SauceDemoLandingPage.java"
+
+Sorted the items with price low to high. The Page Object File for the sorting the item with low to high is "SauceDemoProductPage.java"
+
+Added two items to the shopping cart and asserted the items in the shopping cart. The Page Object File for adding items to the cart is "SauceDemoProductPage.java"
+
+Removed an item from the shopping cart. The Page Object File for removing the item from the cart is "SauceDemoCartPage.java"
+
+Sorted the items with price low to high. The Page Object File for the sorting the item with low to high is "SauceDemoProductPage.java"
+
+Added one more item to the shopping cart. The Page Object File for adding items to the cart  "SauceDemoCartPage.java"
+
+While checkout, Asserted the number of items in the cart. This is the Page Object File for adding items to the cart  -(SauceDemoProductPage.java)
 
 Provide the information in Checkout page. This is the Page Object File for adding items to the cart  -(SauceDemoCheckoutPage.java)
+
+Review the cart items, Asserted the purchasing items are correct and total price of the items. This is the Page Object File for adding items to the cart  -(SauceDemoCheckoutOverviewPage.java)
 
 
 Completed the order. This is the Page Object File for adding items to the cart  -(SauceDemoCheckoutCompletePage.java)
 
+Have shared the execution result(TestNG report) in Results folder.
 
-If a acceptence criteria is not met then the test is failed with required message and control is passed to next test
 
-Environment used for testing
+If a acceptence criteria is not met then the test will be failed with required message and control is passed to next test
+
+#Environment used for testing
 
 Eclipse
 
@@ -36,17 +54,6 @@ Selenium
 
 Maven
 
-# Instructions to excute the project
-
-Please clone the repository.
-
-Run the project using mvn test goal.
-
-I have used firefox and google chrome drivers,Same tests with little modification in the initilization of the browser can be used to extend the test cases Edge,IE and other browser.
-
-I have configured TestNG runner 
-
-Edit: Have shared the execution result(TestNG report) in Results folder.
 
 ** have not uploaded the selenium dependency and browser drivers to the github repo. New locations of the drivers have to be updated in the commonconstants class
 
