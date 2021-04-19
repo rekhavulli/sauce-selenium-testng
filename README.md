@@ -10,7 +10,7 @@ I have used TestNG + Selenium + Page Object Model for automating of the workflow
 
 Clone the repository.
 
-I have used firefox and google chrome drivers, Same tests with little modification in the initilization of the browser can be used to extend the test cases Edge,IE and other browser.
+I have used firefox and google chrome drivers, Same tests with little modification in the initilization of the browser can be used to extend the test cases for Edge,IE and other browser.
 
 To execute this project, please change the webdriver path in the ProductCheckoutHappyPath.java at "beforeMethod".
 
