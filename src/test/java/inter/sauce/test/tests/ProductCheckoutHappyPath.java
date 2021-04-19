@@ -25,32 +25,22 @@ public class ProductCheckoutHappyPath {
         // POM classes 
         SauceDemoLandingPage sauceDemoLandingPage = new SauceDemoLandingPage(driver);
         sauceDemoLandingPage.performLogin();
-        Thread.sleep(5000);
         SauceDemoProductsPage sauceDemoProductsPage = new SauceDemoProductsPage(driver);
         sauceDemoProductsPage.sortProductsFromLowtoHigh();
-        Thread.sleep(5000);
         sauceDemoProductsPage.selectTwoItemsToCart();
-        Thread.sleep(5000);
         SauceDemoCartPage sauceDemoCartPage = new SauceDemoCartPage(driver);
         sauceDemoCartPage.editCart();
-        Thread.sleep(5000);
         sauceDemoCartPage.continueShoppingAfterRemove();
-        Thread.sleep(5000);
         sauceDemoProductsPage.sortProductsFromLowtoHigh();
-        Thread.sleep(5000);
         sauceDemoProductsPage.selectOneMoreItemsToCart();
-        Thread.sleep(5000);
         sauceDemoCartPage.continueCheckout();
-        Thread.sleep(5000);
         SauceDemoCheckoutPage sauceDemoCheckoutPage = new SauceDemoCheckoutPage(driver);
         sauceDemoCheckoutPage.performCheckOut();
-        Thread.sleep(5000);
         SauceDemoCheckoutOverviewPage sauceDemoCheckoutOverviewPage = new SauceDemoCheckoutOverviewPage(driver);
         sauceDemoCheckoutOverviewPage.itemsInCart();
-        Thread.sleep(5000);
         SauceDemoCheckoutCompletePage sauceDemoCheckoutCompletePage = new SauceDemoCheckoutCompletePage(driver);
         sauceDemoCheckoutCompletePage.validateCheckout();
-        Thread.sleep(5000);
+        
     }
 
     /**
