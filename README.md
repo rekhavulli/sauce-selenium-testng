@@ -46,7 +46,7 @@ Have shared the execution result(TestNG report) in Results folder.
 
 If a acceptence criteria is not met then the test will be failed with required message and control is passed to next test
 
-#Environment used for testing
+## Environment used for testing
 
 * Eclipse
 
@@ -55,9 +55,7 @@ If a acceptence criteria is not met then the test will be failed with required m
 * Maven
 
 
-** have not uploaded the selenium dependency and browser drivers to the github repo. New locations of the drivers have to be updated in the commonconstants class
-
-Libraries Used
+## Libraries Used
 
 Selenium - http://www.seleniumhq.org/
 
