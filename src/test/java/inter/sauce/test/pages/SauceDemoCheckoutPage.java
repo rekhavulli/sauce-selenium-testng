@@ -24,9 +24,7 @@ public class SauceDemoCheckoutPage {
         return By.id("continue");
     }
 
-    private static By finishButton(){
-        return By.id("finish");
-    }
+    
     public SauceDemoCheckoutPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -39,9 +37,9 @@ public class SauceDemoCheckoutPage {
             driver.findElement(zipCodeField()).sendKeys("dummy");
             driver.findElement(continueButton()).click();
             UtilityMethods.checkIfPageLoaded(driver, 10);
-            if(UtilityMethods.waitForPresenceThrowsException(driver,finishButton())){
-                driver.findElement(finishButton()).click();
-            }
+            
+                
+           
         }
     }
 }

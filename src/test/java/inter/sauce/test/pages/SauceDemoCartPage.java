@@ -9,7 +9,7 @@ import org.testng.Assert;
 import java.util.List;
 
 public class SauceDemoCartPage {
-    WebDriver driver;
+    static WebDriver driver;
 
 
     private static By checkOut() {
@@ -23,11 +23,32 @@ public class SauceDemoCartPage {
     private static By cartItemsQuantity(){
         return By.xpath("//div[@class='cart_item']/div[@class='cart_quantity']");
     }
-
-    public SauceDemoCartPage(WebDriver driver) {
-        this.driver = driver;
+    
+    private static By removeItem(){
+        return By.xpath("//div[@class='item_pricebar'][1]/button[@id='remove-sauce-labs-onesie']");
+    }
+    
+    private static By continueShopping(){
+        return By.xpath("//div[@class='cart_footer']//button[1]");
     }
 
+    
+
+    public SauceDemoCartPage(WebDriver driver) {
+        SauceDemoCartPage.driver = driver;
+    }
+  
+    public void editCart() {
+        driver.findElement(removeItem()).click();
+        UtilityMethods.checkIfPageLoaded(driver, 10);
+        }
+    
+    public void continueShoppingAfterRemove() {
+        driver.findElement(continueShopping()).click();
+        UtilityMethods.checkIfPageLoaded(driver, 10);
+        }
+    
+    
     public void continueCheckout() {
         Assert.assertEquals(driver.findElements(cartItemsList()).size(),2,"The number of items in the cart should be two");
         List<WebElement> cartElements = driver.findElements(cartItemsQuantity());
@@ -38,5 +59,6 @@ public class SauceDemoCartPage {
         UtilityMethods.checkIfPageLoaded(driver, 10);
     }
 
-
+  
+    
 }

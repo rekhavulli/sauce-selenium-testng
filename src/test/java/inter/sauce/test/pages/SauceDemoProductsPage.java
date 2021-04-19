@@ -33,7 +33,6 @@ public class SauceDemoProductsPage {
         return By.xpath("//a[@class='shopping_cart_link']");
     }
 
-
     public SauceDemoProductsPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -57,5 +56,13 @@ public class SauceDemoProductsPage {
         Assert.assertEquals(driver.findElement(shoppingCartBadge()).getText(), "2", "The shopping cart badge should be equal to 2");
         driver.findElement(shoppingCart()).click();
         UtilityMethods.checkIfPageLoaded(driver, 5);
+    }
+        public void selectOneMoreItemsToCart() {
+            UtilityMethods.checkIfPageLoaded(driver, 2);
+            driver.findElement(addToCartButton(3)).click();
+            UtilityMethods.waitForPresenceThrowsException(driver, shoppingCartBadge());
+            Assert.assertEquals(driver.findElement(shoppingCartBadge()).getText(), "2", "The shopping cart badge should be equal to 1");
+            UtilityMethods.checkIfPageLoaded(driver, 5);
+            driver.findElement(shoppingCart()).click();
     }
 }
